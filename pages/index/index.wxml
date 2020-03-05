@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="page tab_page">
+  <view class="page_body" hover-class="none" hover-stop-propagation="false">  
+  <!-- 轮播图 -->
+    <view class="carousel">
+      <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--  -->
+    <view>
+      <view class="panel_title">企业综合服务</view>
+      <view class="mgb_2">
+        <van-grid column-num="3">
+          <van-grid-item icon="photo-o" text="文字" />
+          <van-grid-item icon="photo-o" text="文字" />
+          <van-grid-item icon="photo-o" text="文字" />
+          <van-grid-item icon="photo-o" text="文字" />
+          <van-grid-item icon="photo-o" text="文字" />
+          <van-grid-item icon="photo-o" text="文字" />
+        </van-grid>
+      </view>
+    </view>
+    <view>
+      <view class="panel_title">企业金融服务</view>
+      <view class="padding">
+        <view wx:for="{{background}}" wx:key="*this" class="card">
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
