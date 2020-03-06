@@ -14,15 +14,17 @@
 
 ## 目录结构
 
-|── assets
-|   |── img
-|── cutom-tab-bar    
-|── miniprogram_npm
-|── pages
-|   |── index 
-|   |── customer 
-|── styles
-|── utils
+|── assets                     静态资源
+|   |── img     
+|── constants                  常用配置   
+|── cutom-tab-bar              通用tabbar   
+|── miniprogram_npm            小程序node_module
+|── node_module                小程序node_module
+|── pages                      小程序页面
+|   |── index                  首页
+|   |── customer               顾客页面
+|── styles                     风格样式
+|── utils                      通用封装
 
 
 ## 关于风格
